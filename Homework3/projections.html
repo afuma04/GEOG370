@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projections</title>
+</head>
+<body>
+    <h1>In this project I learned how to display images in different projections</h1>
+    
+    <h2 style="color:red">How to make projections.</h2>
+    <p>I loaded the world map vector in QGIS then changed the projection in QGIS to what I wanted it to be and made sure that the indicatrix mapper plug in was checked. 
+        After that I created a new print layer so that I could add the projections to the map and export it as a PNG. I repeated the same process for the different projections I did.</p>
+    
+    <h2>WGS84 Projection</h2>
+    <h3>The WGS84 projection</h3>
+    <a href=".//maps/4326.png">
+    <img src=".//maps/4326.png" alt="WGS84" width='500px'>
+    </a>
+    <h2>Aitoff Projection</h2>
+    <h3>Some observations</h3>
+    <a href=".//maps/54043.png">
+    <img src=".//maps/54043.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2 style="color:red">Now, you should <u>add the following projections on your own:</u></h2>
 
+    <h2>EPSG 3857 Projection</h2>
+    <h3>In the Pseudo-Mercator projection, size distortion is very prominent with the areas at the poles experiencing the most distortion.</h3>
+    <a href="./EPSG_3857.png">
+    <img src="./EPSG_3857.png" alt="Pseudo-Mercator" width='500px'>
+
+    <h2>EPSG 54008 Projection</h2>
+    <h3>The World Sinusiodal projection shows the earth in the shape of a spinning top with the amount distortion increasing as you approach the poles and go towards 180 and negative 180 degrees. Size and shape distortion are prominent in this projection.</h3>
+    <a href="./ESRI_54008.png">
+    <img src="./ESRI_54008.png" alt="ESRI 54008" width='500px'>
+
+    <h2>ESRI 54009 Projection</h2>
+    <h3>The World Mollweide projection shows size distortion as you go closer to the poles and 180 and negative 180 degrees.</h3>
+    <a href="./ESRI_ 54009.png">
+    <img src="./ESRI_ 54009.png" alt="ESRI 54009" width='500px'>
+
+    <h2>ESRI 54027 Projection</h2>
+    <h3>The World Equidistant Conic projection shows the highest size and shape distortion at one of the poles in this case the south pole. The distortion increases the closer you get to the south pole and the prime meridian.</h3>
+    <a href="./ESRI_ 54027.png">
+    <img src="./ESRI_ 54027.png" alt="ESRI 54027" width='500px'>
+
+    <h2>ESRI 54034 Projection</h2>
+    <h3>The World Cylindrical Equal Area shows shape distortion at the poles. Distortion is also observed in some places like the part of the Atlantic Ocean east of Argentina.</h3>
+    <a href="./ESRI_ 54034.png">
+    <img src="./ESRI_ 54034.png" alt="ESRI 54034" width='500px'>
+
+    <h2>ESRI 102016 Projection</h2>
+    <h3>The North Pole Azimuthal Equidistant projection shows size and shape distortion increasing the closer you get to the south pole and 180 and negative 180 degrees.</h3>
+    <a href="./ESRI_ 102016.png">
+    <img src="./ESRI_ 102016.png" alt="ESRI 102016" width='500px'>
+
+    <h2>ESRI 53018 Projection</h2>
+    <h3>The Sphere Winkel I projection shows more size distortion as you approach the poles and 180 and negative 180 degrees.</h3>
+    <a href="./ESRI_53018.png">
+    <img src="./ESRI_53018.png" alt="ESRI 53018" width='500px'>
+
+    <h3>EPSG: 3857, 53018, 54034, 54027, 102016, and two additional projections that you choose.</h3>
+    <p></p>
+    <h2>Data used for this project</h2>
+
+
+    <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector </a>
+</body>
+</html>
