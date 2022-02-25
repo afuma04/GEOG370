@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Census Data Ratios and Categories</title>
+</head>
+
+<body>
+    <h3>
+        I created a ratio looking at the poverty rate across the different Texas counties. 
+        I divided the number of people living below poverty level by the total population and multiplied that by 1000 to get the number of people living below poverty level per 1000 people. 
+        I wanted to see whether some parts of the state had higher poverty rates than others and if they did, I wanted to identify which parts. 
+    </h3>
+
+    <img src="EqualCount.png" alt="Equal Count" width='750px'><p></p>
+    <p>
+        This map categorizes the data using equal counts. Equal counts tries to group the data in such a way that each group has the same quantity. 
+        It does this by counting all the values and taking the average based on the number of groups we have.
+        This method ensures that there are not too few or too many items in each group.
+        A con about using this method is that a really large outlier might be put in the same group as much smaller values just so that the count of each group will be similar.
+    </p>
+
+    <img src="EqualInterval.png" alt="Equal Interval" width='750px'><p></p>
+    <p>
+        This map categorizes the data using equal intervals. Equal intervals divides the values into equal groups so the range of each group will always be thesame.
+        A pro about this method is that since it divides the values into equal groups, you can easily compare the attributes of one group to another.
+        A con about using this method is that since it divides the values into equal groups, some groups might have too many values and others might have too few.
+    </p>
+
+    <img src="NaturalBreaks.png" alt="Natural Breaks" width='750px'><p></p>
+    <p>
+        This map categorizes data using natural breaks. Natural breaks divides the data in a way that minimizes variation within each group.
+        This method is useful because it minimizes variation within each group and maximizes it between other groups.
+        It might not be very good if the data does not have much variation.
+    </p>
+</body>
+</html>
