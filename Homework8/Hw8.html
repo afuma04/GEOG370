@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 8</title>
+</head>
+
+<body>
+    <h3>
+        Question: What areas of Texas are covered by a hospital assumiing hospitals can cover everyone within a 20 mile radius?
+    </h3>
+    <h4>
+        
+        The map is looking at areas in Texas that are covered by a hospital. 
+        The dataset contained the location information for hospitals across all 50 states. It was filtered to only show Texas hospitals.
+        Buffer was used to form a 20 mile radius around the hospitals. 
+        In areas with high population densities there were multiple hospitals present so I used dissolve to join those areas using the same zipcode but because there
+        were multiple hospitals in the area, it was hard to see the map and the information below it. I also tried dissolving by city but the same thing happened. 
+        Dissolving by county gave me a better result even though it is still hard to see the data represented on the map.
+        Natural breaks was used to classify the population to show areas with higher population densities vs lower population densities.
+    </h4>
+
+    <img src="DissolvedByCounty.png" alt="Hospitals" width='750px'><p></p>
+    <a href="https://data.census.gov/cedsci/table?t=Populations%20and%20People&g=0400000US48,48%240500000&tid=ACSDP1Y2019.DP05"> Link to population data</a><p></p>
+    <a href="Population.csv"> CSV file</a><p></p>
+    <a href="https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::hospitals-1/about"> Link to hospitals data</a><p></p>
+
+
+</body>
+</html>
